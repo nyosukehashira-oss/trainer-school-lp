@@ -547,8 +547,70 @@ section{padding:72px 20px;}
   padding:24px 28px;font-size:13px;color:var(--text-sub);
 }
 .price-notes li{margin-left:1.2em;margin-bottom:4px;}
+
+/* --- メインプラン（月額サブスク） --- */
+.price-hero{
+  margin-top:52px;
+  background:linear-gradient(135deg,#1E3A8A 0%,#16307A 55%,#111827 100%);
+  border-radius:24px;padding:48px 48px;color:#fff;position:relative;overflow:hidden;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;
+  box-shadow:0 26px 60px rgba(30,58,138,.32);
+}
+.price-hero::after{
+  content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;
+  border-radius:50%;border:1.5px solid rgba(255,255,255,.10);pointer-events:none;
+}
+.price-hero::before{
+  content:"";position:absolute;right:-30px;bottom:-110px;width:240px;height:240px;
+  border-radius:50%;border:1.5px solid rgba(255,255,255,.08);pointer-events:none;
+}
+.price-hero-left{position:relative;z-index:1;}
+.price-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--gold);color:#fff;font-size:13px;font-weight:700;letter-spacing:.08em;
+  padding:6px 18px;border-radius:100px;margin-bottom:18px;
+  box-shadow:0 6px 16px rgba(245,158,11,.35);
+}
+.price-hero-badge i{font-size:12px;}
+.price-hero h3{font-size:27px;font-weight:700;line-height:1.5;margin-bottom:8px;color:#fff;}
+.price-hero .ph-sub{font-size:14px;color:#C7D2FE;margin-bottom:22px;}
+.price-hero-amount{font-family:'Noto Serif JP',serif;font-weight:900;line-height:1;display:flex;align-items:baseline;gap:2px;}
+.price-hero-amount .yen{font-size:28px;}
+.price-hero-amount .num{font-size:66px;letter-spacing:.01em;}
+.price-hero-amount .per{font-size:22px;font-weight:700;margin-left:4px;}
+.price-hero .ph-tax{font-size:13px;color:#C7D2FE;margin-top:8px;}
+.price-hero-right{position:relative;z-index:1;}
+.ph-features{list-style:none;margin-bottom:26px;}
+.ph-features li{
+  font-size:14.5px;color:#EAF0FF;padding:9px 0;
+  border-bottom:1px solid rgba(255,255,255,.14);display:flex;gap:12px;align-items:baseline;
+}
+.ph-features li::before{
+  content:"\f00c";font-family:"Font Awesome 6 Free";font-weight:900;
+  color:var(--gold);font-size:12px;flex:0 0 auto;
+}
+.btn-hero{background:#fff;color:var(--blue);border-color:#fff;width:100%;font-size:17px;padding:18px 38px;}
+.btn-hero:hover{background:var(--gold);color:#fff;border-color:var(--gold);transform:translateY(-2px);box-shadow:0 12px 28px rgba(245,158,11,.4);}
+
+/* --- サブプラン（一括）見出し --- */
+.price-sub-head{margin:64px 0 0;text-align:center;}
+.price-sub-head h3{font-size:21px;font-weight:700;margin-bottom:8px;}
+.price-sub-head p{font-size:14px;color:var(--text-sub);max-width:620px;margin:0 auto;}
+.price-grid.is-sub{margin-top:32px;}
+.price-grid.is-sub .price-card{padding:28px 22px 24px;}
+.price-grid.is-sub .price-card h3{font-size:16.5px;margin-bottom:14px;min-height:2.8em;}
+.price-grid.is-sub .price-amount .num{font-size:29px;}
+.price-grid.is-sub .price-amount .yen{font-size:16px;}
+.price-grid.is-sub .plan-features li{font-size:12.5px;padding:6px 0;}
+.btn-buy.is-sub{background:var(--white);color:var(--blue);border-color:var(--blue);font-size:14px;padding:13px 20px;}
+.btn-buy.is-sub:hover{background:var(--blue);color:#fff;border-color:var(--blue);}
+
+@media(max-width:880px){
+  .price-hero{grid-template-columns:1fr;gap:28px;padding:38px 30px;}
+  .price-hero-amount .num{font-size:54px;}
+}
 @media(max-width:980px){.price-grid{grid-template-columns:1fr 1fr;}}
-@media(max-width:560px){.price-grid{grid-template-columns:1fr;}.price-card h3{min-height:0;}}
+@media(max-width:560px){.price-grid{grid-template-columns:1fr;}.price-card h3{min-height:0;}.price-grid.is-sub .price-card h3{min-height:0;}}
 
 /* ===== FLOW ===== */
 .flow{background:var(--bg-sub);}
@@ -1087,11 +1149,40 @@ section{padding:72px 20px;}
     <div class="center reveal">
       <span class="sec-label">料金プラン</span>
       <h2 class="sec-title">料金プラン</h2>
-      <p class="sec-lead">サポート期間に応じた4つのプランをご用意。学習の深さと伴走期間で、あなたに合ったプランをお選びください。</p>
+      <p class="sec-lead">まずは月額制で気軽にスタート。本気で取り組みたい方には、長期で集中できる一括プランもご用意しています。</p>
     </div>
-    <div class="price-grid">
-      <div class="price-card recommended reveal">
-        <span class="reco-badge"><i class="fa-solid fa-crown"></i>おすすめ</span>
+
+    <!-- メインプラン：月額サブスク -->
+    <div class="price-hero reveal">
+      <div class="price-hero-left">
+        <span class="price-hero-badge"><i class="fa-solid fa-crown"></i>一番人気・メインプラン</span>
+        <h3>月額サブスクリプションプラン</h3>
+        <p class="ph-sub">月単位で続けられるから、リスク最小で今日から学べる。</p>
+        <div class="price-hero-amount">
+          <span class="yen">¥</span><span class="num">66,500</span><span class="per">/ 月</span>
+        </div>
+        <p class="ph-tax">（税込）／ いつでも解約可能</p>
+      </div>
+      <div class="price-hero-right">
+        <ul class="ph-features">
+          <li>動画教材 視聴（受講期間中いつでも）</li>
+          <li>コミュニティ入会</li>
+          <li>全体勉強会（グルコン）月2回</li>
+          <li>個別チャットサポート</li>
+          <li>クライアント対応ロールプレイ</li>
+          <li>独立・副業の収益化サポート</li>
+        </ul>
+        <a href="#" class="btn btn-hero">このプランで申し込む<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- サブプラン：一括 -->
+    <div class="price-sub-head reveal">
+      <h3>まとめてお支払いプラン（一括）</h3>
+      <p>より長期で集中的に取り組みたい方へ。サポート期間をまとめてお申込みいただける一括プランです。</p>
+    </div>
+    <div class="price-grid is-sub">
+      <div class="price-card reveal">
         <span class="plan-term">12ヶ月コース</span>
         <h3>1年サポートプラン</h3>
         <div class="price-amount"><span class="yen">¥</span><span class="num">798,000</span></div>
@@ -1104,7 +1195,7 @@ section{padding:72px 20px;}
           <li>ロールプレイ実践</li>
           <li>独立・副業の収益化サポート</li>
         </ul>
-        <a href="#" class="btn btn-buy">このプランで申し込む</a>
+        <a href="#" class="btn btn-buy is-sub">申し込む</a>
       </div>
       <div class="price-card reveal">
         <span class="plan-term">6ヶ月コース</span>
@@ -1119,7 +1210,7 @@ section{padding:72px 20px;}
           <li>ロールプレイ実践</li>
           <li>独立・副業の収益化サポート</li>
         </ul>
-        <a href="#" class="btn btn-buy">このプランで申し込む</a>
+        <a href="#" class="btn btn-buy is-sub">申し込む</a>
       </div>
       <div class="price-card reveal">
         <span class="plan-term">3ヶ月コース</span>
@@ -1134,7 +1225,7 @@ section{padding:72px 20px;}
           <li>ロールプレイ実践</li>
           <li class="muted">収益化サポートは基礎範囲</li>
         </ul>
-        <a href="#" class="btn btn-buy">このプランで申し込む</a>
+        <a href="#" class="btn btn-buy is-sub">申し込む</a>
       </div>
       <div class="price-card reveal">
         <span class="plan-term">コミュニティ会員</span>
@@ -1149,15 +1240,15 @@ section{padding:72px 20px;}
           <li class="muted">ロールプレイは対象外</li>
           <li class="muted">収益化サポートは対象外</li>
         </ul>
-        <a href="#" class="btn btn-buy">このプランで申し込む</a>
+        <a href="#" class="btn btn-buy is-sub">申し込む</a>
       </div>
     </div>
     <div class="price-notes reveal">
       <ul>
-        <li>提供内容・サポート範囲はプランにより異なる場合があります。</li>
-        <li>各プランの詳細は、ご案内ページまたはお申込み時にご確認いただけます。</li>
-        <li>サポート付きプランでは、学習だけでなく独立・副業に向けた実務面まで講師が伴走します。</li>
-        <li>表示価格は変更となる場合があります。最新の価格は決済ページをご確認ください。</li>
+        <li>月額サブスクリプションプランは毎月課金で、いつでも解約可能です（解約手続きの締め日等はお申込み時にご案内します）。</li>
+        <li>一括プランは表示金額をまとめてお支払いいただくプランで、サポート期間が定められています。</li>
+        <li>提供内容・サポート範囲はプランにより異なる場合があります。詳細はご案内ページまたはお申込み時にご確認いただけます。</li>
+        <li>表示価格はすべて税込です。価格は変更となる場合があり、最新の価格は決済ページをご確認ください。</li>
       </ul>
     </div>
   </div>
