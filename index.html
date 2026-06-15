@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YOUR_SCHOOL_NAME｜パーソナルトレーナー養成・独立支援オンラインスクール</title>
+<title>GOODLIFEスクール｜パーソナルトレーナー養成・独立支援オンラインスクール</title>
 <meta name="description" content="科学的トレーニング理論とビジネス構築メソッドを学び、独立・副業パーソナルトレーナーとして安定収入を目指すオンラインスクール。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -400,6 +400,72 @@ section{padding:72px 20px;}
 @media(max-width:880px){.support-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:560px){.support-grid{grid-template-columns:1fr;}}
 
+/* ===== ENVIRONMENT (施設ギャラリー) ===== */
+.environment{background:var(--dark-deep);}
+.env-gallery{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;margin-top:44px;
+}
+.env-item{
+  position:relative;overflow:hidden;border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+}
+.env-item img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .6s ease;
+}
+.env-item:hover img{transform:scale(1.06);}
+.env-item.wide{grid-column:span 2;}
+.env-item.tall{grid-row:span 2;}
+.env-cap{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:26px 18px 14px;
+  background:linear-gradient(transparent, rgba(17,24,39,.82));
+  color:#fff;font-size:13px;font-weight:700;letter-spacing:.04em;
+  display:flex;align-items:center;gap:8px;
+}
+.env-cap i{color:var(--gold);font-size:12px;}
+@media(max-width:880px){
+  .env-gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px;}
+  .env-item.tall{grid-row:span 1;}
+}
+@media(max-width:560px){
+  .env-gallery{grid-template-columns:1fr 1fr;grid-auto-rows:130px;}
+  .env-item.wide{grid-column:span 2;}
+}
+
+/* ===== ENVIRONMENT (施設ギャラリー) ===== */
+.environment{background:var(--dark-deep);}
+.env-gallery{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;margin-top:44px;
+}
+.env-item{
+  position:relative;overflow:hidden;border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+}
+.env-item img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .6s ease;
+}
+.env-item:hover img{transform:scale(1.06);}
+.env-item.wide{grid-column:span 2;}
+.env-item.tall{grid-row:span 2;}
+.env-cap{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:26px 18px 14px;
+  background:linear-gradient(transparent, rgba(17,24,39,.82));
+  color:#fff;font-size:13px;font-weight:700;letter-spacing:.04em;
+  display:flex;align-items:center;gap:8px;
+}
+.env-cap i{color:var(--gold);font-size:12px;}
+@media(max-width:880px){
+  .env-gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px;}
+  .env-item.tall{grid-row:span 1;}
+}
+@media(max-width:560px){
+  .env-gallery{grid-template-columns:1fr 1fr;grid-auto-rows:130px;}
+  .env-item.wide{grid-column:span 2;}
+}
+
 /* ===== HOW IT WORKS ===== */
 .how{background:var(--bg-sub);}
 .how-flow{
@@ -631,13 +697,13 @@ section{padding:72px 20px;}
 <!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="#top" class="header-logo"><span class="logo-mark"><i class="fa-solid fa-dumbbell"></i></span>YOUR_SCHOOL_NAME</a>
+    <a href="#top" class="header-logo"><span class="logo-mark"><i class="fa-solid fa-dumbbell"></i></span>GOODLIFEスクール</a>
     <nav class="header-nav">
       <a href="#about">スクール紹介</a>
       <a href="#curriculum">カリキュラム</a>
       <a href="#price">料金プラン</a>
       <a href="#faq">FAQ</a>
-      <a href="YOUR_PAYMENT_URL" class="header-cta">申し込む</a>
+      <a href="#" class="header-cta">申し込む</a>
     </nav>
   </div>
 </header>
@@ -646,7 +712,7 @@ section{padding:72px 20px;}
 <section class="hero" id="top">
   <div class="hero-inner">
     <div class="hero-copy">
-    <span class="hero-badge"><i class="fa-solid fa-star"></i>YOUR_SCHOOL_NAME｜パーソナルトレーナー養成・独立支援スクール</span>
+    <span class="hero-badge"><i class="fa-solid fa-star"></i>GOODLIFEスクール｜パーソナルトレーナー養成・独立支援スクール</span>
     <h1>
       <span class="underline">“筋トレ好き”</span>を、<br>
       <span class="accent">稼げる仕事</span>に変える。
@@ -662,7 +728,7 @@ section{padding:72px 20px;}
       <span class="pill"><i class="fa-solid fa-rocket"></i>独立・副業向け</span>
     </div>
     <div class="hero-ctas">
-      <a href="YOUR_PAYMENT_URL" class="btn btn-primary">今すぐ申し込む<i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#" class="btn btn-primary">今すぐ申し込む<i class="fa-solid fa-arrow-right"></i></a>
       <a href="#price" class="btn btn-secondary">料金プランを見る<i class="fa-solid fa-arrow-down"></i></a>
     </div>
     <p class="hero-note"><i class="fa-solid fa-lock"></i>決済はUnivaPayの安全な決済システムを利用しています</p>
@@ -672,7 +738,7 @@ section{padding:72px 20px;}
       <div class="hero-float">
         <div class="hf-icon"><i class="fa-solid fa-graduation-cap"></i></div>
         <div>
-          <span class="hf-label">CAREER SCHOOL</span>
+          <span class="hf-label">キャリアスクール</span>
           <span class="hf-text">指導スキル × 収益化を実務で学ぶ</span>
         </div>
       </div>
@@ -684,7 +750,7 @@ section{padding:72px 20px;}
 <section class="problem" id="problem">
   <div class="section-inner-wide">
     <div class="center reveal">
-      <span class="sec-label">Problem</span>
+      <span class="sec-label">課題</span>
       <h2 class="sec-title">こんな悩み、ありませんか？</h2>
       <p class="sec-lead">「筋トレが好き」から先に進めない。多くの方が、同じ壁の前で立ち止まっています。</p>
     </div>
@@ -719,7 +785,7 @@ section{padding:72px 20px;}
       </div>
     </div>
     <div class="problem-cause reveal">
-      <span class="cause-label">ROOT CAUSE ── 根本原因</span>
+      <span class="cause-label">根本原因</span>
       <p>“知識がある”だけでは仕事になりません。<br>必要なのは、<strong>指導力 × 実務力 × 収益化の設計</strong>です。</p>
     </div>
   </div>
@@ -729,7 +795,7 @@ section{padding:72px 20px;}
 <section class="solution" id="solution">
   <div class="section-inner-wide">
     <div class="reveal">
-      <span class="sec-label">Solution</span>
+      <span class="sec-label">解決策</span>
       <h2 class="sec-title">学んで終わりにしない。<br>「仕事に繋がる」までを設計したスクールです。</h2>
       <p class="sec-lead">本スクールは、知識のインプットだけで完結しません。学んだ理論を実践に落とし込み、フィードバックを受けて磨き、指導・集客・収益化まで一気通貫で身につける──そのプロセス全体をカリキュラムとサポートで支えます。</p>
     </div>
@@ -743,25 +809,25 @@ section{padding:72px 20px;}
     </div>
     <div class="steps">
       <div class="step-card reveal">
-        <span class="step-num">STEP 01</span>
+        <span class="step-num">ステップ01</span>
         <div class="s-icon"><i class="fa-solid fa-circle-play"></i></div>
         <h3>動画で理論を学ぶ</h3>
         <p>解剖学・生理学からビジネス構築まで、体系化された動画教材で基礎を固めます。</p>
       </div>
       <div class="step-card reveal">
-        <span class="step-num">STEP 02</span>
+        <span class="step-num">ステップ02</span>
         <div class="s-icon"><i class="fa-solid fa-person-running"></i></div>
         <h3>実践形式で落とし込む</h3>
         <p>ロールプレイや課題を通じて、学んだ知識を「使えるスキル」へ変換します。</p>
       </div>
       <div class="step-card reveal">
-        <span class="step-num">STEP 03</span>
+        <span class="step-num">ステップ03</span>
         <div class="s-icon"><i class="fa-solid fa-comments"></i></div>
         <h3>フィードバックを受ける</h3>
         <p>チャットサポートと月2回のグルコンで、つまずきをその場で解消し精度を高めます。</p>
       </div>
       <div class="step-card reveal">
-        <span class="step-num">STEP 04</span>
+        <span class="step-num">ステップ04</span>
         <div class="s-icon"><i class="fa-solid fa-rocket"></i></div>
         <h3>指導・集客・収益化へ</h3>
         <p>SNS発信・集客導線・単価設計まで学び、独立・副業の収益化に繋げます。</p>
@@ -774,7 +840,7 @@ section{padding:72px 20px;}
 <section class="about" id="about">
   <div class="section-inner-wide">
     <div class="center reveal">
-      <span class="sec-label">About</span>
+      <span class="sec-label">スクールの特長</span>
       <h2 class="sec-title">このスクールが提供する、4つの価値</h2>
       <p class="sec-lead">教育・実務・サポート・ビジネス。4つの柱で、「指導できるトレーナー」への成長を支えます。</p>
     </div>
@@ -783,7 +849,7 @@ section{padding:72px 20px;}
         <div class="a-head">
           <div class="a-icon"><i class="fa-solid fa-flask"></i></div>
           <div>
-            <span class="a-no">VALUE 01</span>
+            <span class="a-no">特長01</span>
             <h3>科学的トレーニング理論</h3>
           </div>
         </div>
@@ -793,7 +859,7 @@ section{padding:72px 20px;}
         <div class="a-head">
           <div class="a-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
           <div>
-            <span class="a-no">VALUE 02</span>
+            <span class="a-no">特長02</span>
             <h3>実践的な指導スキル</h3>
           </div>
         </div>
@@ -803,7 +869,7 @@ section{padding:72px 20px;}
         <div class="a-head">
           <div class="a-icon"><i class="fa-solid fa-handshake-angle"></i></div>
           <div>
-            <span class="a-no">VALUE 03</span>
+            <span class="a-no">特長03</span>
             <h3>継続サポート体制</h3>
           </div>
         </div>
@@ -813,7 +879,7 @@ section{padding:72px 20px;}
         <div class="a-head">
           <div class="a-icon"><i class="fa-solid fa-chart-line"></i></div>
           <div>
-            <span class="a-no">VALUE 04</span>
+            <span class="a-no">特長04</span>
             <h3>独立・副業の収益化支援</h3>
           </div>
         </div>
@@ -821,7 +887,7 @@ section{padding:72px 20px;}
       </div>
     </div>
     <div class="vision-block reveal">
-      <span class="v-label">VISION</span>
+      <span class="v-label">私たちのビジョン</span>
       <p>正しい知識と実践力を備えたトレーナーを増やし、<br>体づくりを支える“価値ある仕事”として広げていく。</p>
     </div>
   </div>
@@ -831,7 +897,7 @@ section{padding:72px 20px;}
 <section class="curriculum dark-sec" id="curriculum">
   <div class="section-inner-wide">
     <div class="center reveal">
-      <span class="sec-label">Curriculum</span>
+      <span class="sec-label">学習カリキュラム</span>
       <h2 class="sec-title">カリキュラム</h2>
       <p class="sec-lead">理論 → 指導実務 → セッション運営 → ビジネス構築。トレーナーとして自立するまでの流れを、4つの章で体系化しています。</p>
     </div>
@@ -839,7 +905,7 @@ section{padding:72px 20px;}
       <div class="curr-card reveal">
         <img class="curr-thumb" src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="トレーニング理論の基礎" loading="lazy">
         <div class="curr-ch">
-          <span class="ch-no">CHAPTER 01</span>
+          <span class="ch-no">第1章</span>
           <h3>トレーニング理論の基礎</h3>
         </div>
         <ul class="curr-items">
@@ -851,7 +917,7 @@ section{padding:72px 20px;}
       <div class="curr-card reveal">
         <img class="curr-thumb" src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=600&q=80" alt="指導実務・クライアント対応" loading="lazy">
         <div class="curr-ch">
-          <span class="ch-no">CHAPTER 02</span>
+          <span class="ch-no">第2章</span>
           <h3>指導実務・クライアント対応</h3>
         </div>
         <ul class="curr-items">
@@ -863,7 +929,7 @@ section{padding:72px 20px;}
       <div class="curr-card reveal">
         <img class="curr-thumb" src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&q=80" alt="セッション運営・クロージング" loading="lazy">
         <div class="curr-ch">
-          <span class="ch-no">CHAPTER 03</span>
+          <span class="ch-no">第3章</span>
           <h3>セッション運営・クロージング</h3>
         </div>
         <ul class="curr-items">
@@ -875,7 +941,7 @@ section{padding:72px 20px;}
       <div class="curr-card reveal">
         <img class="curr-thumb" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="独立・副業のビジネス構築" loading="lazy">
         <div class="curr-ch">
-          <span class="ch-no">CHAPTER 04</span>
+          <span class="ch-no">第4章</span>
           <h3>独立・副業のビジネス構築</h3>
         </div>
         <ul class="curr-items">
@@ -892,7 +958,7 @@ section{padding:72px 20px;}
 <section class="support" id="support">
   <div class="section-inner-wide">
     <div class="center reveal">
-      <span class="sec-label">Support</span>
+      <span class="sec-label">サポート体制</span>
       <h2 class="sec-title">学習を、仕事になるまで支えるサポート</h2>
       <p class="sec-lead">教材を渡して終わりではありません。学習・実務・継続・コミュニティの全方位で、受講生の成長に伴走します。</p>
     </div>
@@ -931,11 +997,48 @@ section{padding:72px 20px;}
   </div>
 </section>
 
+<!-- ============ 施設ギャラリー（学べる環境） ============ -->
+<section class="environment dark-sec" id="environment">
+  <div class="section-inner-wide">
+    <div class="center reveal">
+      <span class="sec-label">学べる環境</span>
+      <h2 class="sec-title">学びと実践の舞台</h2>
+      <p class="sec-lead">理論を実際のクライアント指導へ落とし込むための実践環境。フリーウェイトからマシンまで、現場さながらの設備でロールプレイ・実技を行います。</p>
+    </div>
+    <div class="env-gallery">
+      <div class="env-item wide tall reveal">
+        <img src="images/facility-01.jpg" alt="スクールの全体トレーニングフロア" loading="lazy">
+        <span class="env-cap"><i class="fa-solid fa-location-dot"></i>トレーニングフロア全景</span>
+      </div>
+      <div class="env-item reveal">
+        <img src="images/facility-02.jpg" alt="ストレッチ・コンディショニング指導" loading="lazy">
+        <span class="env-cap"><i class="fa-solid fa-hand-holding-heart"></i>コンディショニング</span>
+      </div>
+      <div class="env-item reveal">
+        <img src="images/facility-04.jpg" alt="フリーウェイトとアートウォール" loading="lazy">
+        <span class="env-cap"><i class="fa-solid fa-dumbbell"></i>フリーウェイトエリア</span>
+      </div>
+      <div class="env-item reveal">
+        <img src="images/facility-03.jpg" alt="マンツーマンのストレッチ補助" loading="lazy">
+        <span class="env-cap"><i class="fa-solid fa-user-group"></i>マンツーマン指導</span>
+      </div>
+      <div class="env-item reveal">
+        <img src="images/facility-05.jpg" alt="ファンクショナルトレーニングエリア" loading="lazy">
+        <span class="env-cap"><i class="fa-solid fa-fire"></i>ファンクショナル</span>
+      </div>
+      <div class="env-item wide reveal">
+        <img src="images/facility-06.jpg" alt="本格的なウェイトプレートと器具" loading="lazy">
+        <span class="env-cap"><i class="fa-solid fa-weight-hanging"></i>本格ウェイト設備</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ 7. HOW IT WORKS ============ -->
 <section class="how" id="how">
   <div class="section-inner-wide">
     <div class="center reveal">
-      <span class="sec-label">How It Works</span>
+      <span class="sec-label">受講の仕組み</span>
       <h2 class="sec-title">受講の仕組み</h2>
       <p class="sec-lead">申込から学習開始まで、シンプルな6ステップ。オンライン完結で、すぐにスタートできます。</p>
     </div>
@@ -973,7 +1076,7 @@ section{padding:72px 20px;}
     </div>
     <div class="how-tool-note reveal">
       <i class="fa-solid fa-circle-info"></i>
-      <span>コミュニティ・サポートには <code>YOUR_SUPPORT_TOOL</code> を使用します（Chatwork / Discord / Slack のいずれかを予定）。</span>
+      <span>コミュニティ・サポートには <code>Discord</code> を使用します（Chatwork / Discord / Slack のいずれかを予定）。</span>
     </div>
   </div>
 </section>
@@ -982,14 +1085,14 @@ section{padding:72px 20px;}
 <section class="price" id="price">
   <div class="section-inner-wide">
     <div class="center reveal">
-      <span class="sec-label">Price</span>
+      <span class="sec-label">料金プラン</span>
       <h2 class="sec-title">料金プラン</h2>
       <p class="sec-lead">サポート期間に応じた4つのプランをご用意。学習の深さと伴走期間で、あなたに合ったプランをお選びください。</p>
     </div>
     <div class="price-grid">
       <div class="price-card recommended reveal">
         <span class="reco-badge"><i class="fa-solid fa-crown"></i>おすすめ</span>
-        <span class="plan-term">12 MONTHS</span>
+        <span class="plan-term">12ヶ月コース</span>
         <h3>1年サポートプラン</h3>
         <div class="price-amount"><span class="yen">¥</span><span class="num">798,000</span></div>
         <p class="price-tax">（税込）</p>
@@ -1001,10 +1104,10 @@ section{padding:72px 20px;}
           <li>ロールプレイ実践</li>
           <li>独立・副業の収益化サポート</li>
         </ul>
-        <a href="YOUR_PAYMENT_URL" class="btn btn-buy">このプランで申し込む</a>
+        <a href="#" class="btn btn-buy">このプランで申し込む</a>
       </div>
       <div class="price-card reveal">
-        <span class="plan-term">6 MONTHS</span>
+        <span class="plan-term">6ヶ月コース</span>
         <h3>6ヶ月サポートプラン</h3>
         <div class="price-amount"><span class="yen">¥</span><span class="num">598,000</span></div>
         <p class="price-tax">（税込）</p>
@@ -1016,10 +1119,10 @@ section{padding:72px 20px;}
           <li>ロールプレイ実践</li>
           <li>独立・副業の収益化サポート</li>
         </ul>
-        <a href="YOUR_PAYMENT_URL" class="btn btn-buy">このプランで申し込む</a>
+        <a href="#" class="btn btn-buy">このプランで申し込む</a>
       </div>
       <div class="price-card reveal">
-        <span class="plan-term">3 MONTHS</span>
+        <span class="plan-term">3ヶ月コース</span>
         <h3>3ヶ月サポートプラン</h3>
         <div class="price-amount"><span class="yen">¥</span><span class="num">298,000</span></div>
         <p class="price-tax">（税込）</p>
@@ -1031,10 +1134,10 @@ section{padding:72px 20px;}
           <li>ロールプレイ実践</li>
           <li class="muted">収益化サポートは基礎範囲</li>
         </ul>
-        <a href="YOUR_PAYMENT_URL" class="btn btn-buy">このプランで申し込む</a>
+        <a href="#" class="btn btn-buy">このプランで申し込む</a>
       </div>
       <div class="price-card reveal">
-        <span class="plan-term">COMMUNITY</span>
+        <span class="plan-term">コミュニティ会員</span>
         <h3>動画教材コミュニティ</h3>
         <div class="price-amount"><span class="yen">¥</span><span class="num">198,000</span></div>
         <p class="price-tax">（税込）</p>
@@ -1046,7 +1149,7 @@ section{padding:72px 20px;}
           <li class="muted">ロールプレイは対象外</li>
           <li class="muted">収益化サポートは対象外</li>
         </ul>
-        <a href="YOUR_PAYMENT_URL" class="btn btn-buy">このプランで申し込む</a>
+        <a href="#" class="btn btn-buy">このプランで申し込む</a>
       </div>
     </div>
     <div class="price-notes reveal">
@@ -1064,7 +1167,7 @@ section{padding:72px 20px;}
 <section class="flow" id="flow">
   <div class="section-inner">
     <div class="center reveal">
-      <span class="sec-label">Flow</span>
+      <span class="sec-label">お申込みの流れ</span>
       <h2 class="sec-title">お申込みから受講開始までの流れ</h2>
       <p class="sec-lead">お申込みは数分で完了します。決済後、ご案内に沿って進めるだけで受講を開始できます。</p>
     </div>
@@ -1112,7 +1215,7 @@ section{padding:72px 20px;}
 <section class="faq" id="faq">
   <div class="section-inner">
     <div class="center reveal">
-      <span class="sec-label">FAQ</span>
+      <span class="sec-label">よくあるご質問</span>
       <h2 class="sec-title">よくある質問</h2>
       <p class="sec-lead">お申込み前の不安や疑問にお答えします。その他のご質問はお気軽にお問い合わせください。</p>
     </div>
@@ -1163,7 +1266,7 @@ section{padding:72px 20px;}
         <summary><span class="q-mark">Q.</span>サポートツールは何を使いますか？</summary>
         <div class="faq-answer">
           <span class="a-mark">A.</span>
-          <p>コミュニティおよびチャットサポートには YOUR_SUPPORT_TOOL（Chatwork / Discord / Slack のいずれか）を使用する予定です。詳細はお申込み後のご案内にてお知らせします。スマートフォンからもご利用いただけます。</p>
+          <p>コミュニティおよびチャットサポートには Discord（Chatwork / Discord / Slack のいずれか）を使用する予定です。詳細はお申込み後のご案内にてお知らせします。スマートフォンからもご利用いただけます。</p>
         </div>
       </details>
     </div>
@@ -1173,11 +1276,11 @@ section{padding:72px 20px;}
 <!-- ============ 11. FINAL CTA ============ -->
 <section class="final-cta dark-sec" id="cta">
   <div class="final-cta-inner reveal">
-    <span class="fc-label">START YOUR CAREER</span>
+    <span class="fc-label">さあ、はじめよう</span>
     <h2>好きな筋トレを、<br><span class="accent">“収入になる専門スキル”</span>へ。</h2>
     <p class="fc-sub">次に目指すのは、鍛えるだけではなく「指導できる自分」。独立・副業トレーナーへの一歩を、ここから踏み出してください。</p>
-    <a href="YOUR_PAYMENT_URL" class="btn btn-primary">今すぐ申し込む<i class="fa-solid fa-arrow-right"></i></a>
-    <p class="fc-contact">ご不明点はお気軽にどうぞ：<a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
+    <a href="#" class="btn btn-primary">今すぐ申し込む<i class="fa-solid fa-arrow-right"></i></a>
+    <p class="fc-contact">ご不明点はお気軽にどうぞ：<a href="mailto:kota.mori@goodlifegym.jp">kota.mori@goodlifegym.jp</a></p>
   </div>
 </section>
 
@@ -1185,23 +1288,23 @@ section{padding:72px 20px;}
 <section class="legal" id="legal">
   <div class="section-inner">
     <div class="center reveal">
-      <span class="sec-label">Legal</span>
+      <span class="sec-label">特商法表記</span>
       <h2 class="sec-title">特定商取引法に基づく表記</h2>
     </div>
     <div class="legal-table-wrap reveal">
       <table class="legal-table">
-        <tr><th>販売事業者</th><td>YOUR_COMPANY_NAME</td></tr>
-        <tr><th>代表者</th><td>YOUR_REPRESENTATIVE</td></tr>
-        <tr><th>所在地</th><td>YOUR_ADDRESS</td></tr>
-        <tr><th>電話番号</th><td>YOUR_PHONE<br><small>※お問い合わせは原則メールにてお願いいたします。</small></td></tr>
-        <tr><th>メールアドレス</th><td>YOUR_EMAIL</td></tr>
-        <tr><th>サイトURL</th><td>YOUR_SITE_URL</td></tr>
+        <tr><th>販売事業者</th><td>合同会社GOODLIFE</td></tr>
+        <tr><th>代表者</th><td>鈴木 涼太</td></tr>
+        <tr><th>所在地</th><td>東京都渋谷区代々木3-46-16 小野木ビル607</td></tr>
+        <tr><th>電話番号</th><td>090-2647-1085<br><small>※お問い合わせは原則メールにてお願いいたします。</small></td></tr>
+        <tr><th>メールアドレス</th><td>kota.mori@goodlifegym.jp</td></tr>
+        <tr><th>サイトURL</th><td>https://goodlifegym.jp</td></tr>
         <tr><th>販売価格</th><td>各プランの紹介ページに記載の金額（税込）<br>1年サポートプラン：798,000円／6ヶ月サポートプラン：598,000円／3ヶ月サポートプラン：298,000円／動画教材コミュニティ：198,000円</td></tr>
-        <tr><th>商品代金以外の必要料金</th><td>インターネット接続にかかる通信費等はお客様のご負担となります。</td></tr>
-        <tr><th>支払方法</th><td>UnivaPay決済システムによるクレジットカード決済等<br>（ご利用可能な決済手段の詳細は決済ページをご確認ください）</td></tr>
-        <tr><th>支払時期</th><td>お申込み時にお支払いいただきます。分割払いをご利用の場合は、各カード会社の規約に基づきます。</td></tr>
-        <tr><th>提供時期</th><td>決済完了後、ご登録メールアドレス宛に受講案内をお送りし、案内記載の手順に沿って速やかにサービスの提供を開始いたします。</td></tr>
-        <tr><th>返品・キャンセル</th><td>デジタルコンテンツおよび役務提供という商品の性質上、お客様都合による決済完了後の返品・返金はお受けしておりません。コンテンツに重大な不具合がありご利用いただけない場合は、メールにてお問い合わせください。</td></tr>
+        <tr><th>商品代金以外の必要料金</th><td>消費税（販売価格は税込表示です）。その他、インターネット接続にかかる通信費等はお客様のご負担となります。</td></tr>
+        <tr><th>支払方法</th><td>クレジットカード／銀行振込<br>（クレジットカード決済はUnivaPay決済システムを利用します）</td></tr>
+        <tr><th>支払時期</th><td>商品購入時にお支払いいただきます。分割払いをご利用の場合は、各カード会社の規約に基づきます。</td></tr>
+        <tr><th>提供時期</th><td>決済確認後、即日、ご登録メールアドレス宛に受講案内をお送りし、サービスの提供を開始いたします。</td></tr>
+        <tr><th>返品・キャンセル</th><td>商品の性質上、お客様都合によるキャンセル・返品は原則お受けしておりません。ただし、システムの不具合など弊社都合による場合は対応いたします。</td></tr>
         <tr><th>中途解約について</th><td>サポート期間中の中途解約をご希望の場合は、メールにてご連絡ください。解約条件・取扱いの詳細は利用規約および契約時のご案内に基づきます。</td></tr>
         <tr><th>動作環境</th><td>動画視聴およびコミュニティ参加が可能なインターネット接続環境・端末（PC / スマートフォン / タブレット）が必要です。</td></tr>
       </table>
@@ -1211,17 +1314,17 @@ section{padding:72px 20px;}
 
 <!-- ============ 13. FOOTER ============ -->
 <footer class="site-footer">
-  <div class="footer-logo">YOUR_SCHOOL_NAME</div>
+  <div class="footer-logo">GOODLIFEスクール</div>
   <nav class="footer-nav">
     <a href="#about">スクール紹介</a>
     <a href="#curriculum">カリキュラム</a>
     <a href="#price">料金プラン</a>
     <a href="#faq">FAQ</a>
     <a href="#legal">特定商取引法に基づく表記</a>
-    <a href="YOUR_SITE_URL">プライバシーポリシー</a>
-    <a href="mailto:YOUR_EMAIL">お問い合わせ</a>
+    <a href="https://goodlifegym.jp">プライバシーポリシー</a>
+    <a href="mailto:kota.mori@goodlifegym.jp">お問い合わせ</a>
   </nav>
-  <p class="footer-copy">&copy; <span id="copyright-year">2026</span> YOUR_COMPANY_NAME All Rights Reserved.</p>
+  <p class="footer-copy">&copy; <span id="copyright-year">2026</span> 合同会社GOODLIFE　無断転載を禁じます。</p>
 </footer>
 
 <script>
